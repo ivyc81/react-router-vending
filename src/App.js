@@ -1,25 +1,25 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
+import VendingMachine from './VendingMachine';
+import Soda from './Soda';
+import Chocolate from './Chocolate';
+import Gim from './Gim';
+import Navbar from './Navbar';
 import './App.css';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <BrowserRouter>
+          {/* <Navbar /> */}
+          <Switch>
+            <Route exact path='/' render={() => <VendingMachine />} />
+            <Route exact path='/soda' render={() => <Soda />} />
+            <Route exact path='/chocolate' render={() => <Chocolate />} />
+            <Route exact path='/gim' render={() => <Gim />} />
+          </Switch>
+        </BrowserRouter>
       </div>
     );
   }
