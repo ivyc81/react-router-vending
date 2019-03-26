@@ -6,9 +6,9 @@ class VendingMachine extends Component {
   render() {
     return (
       <div className="VendingMachine">
-        <p><Link exact to='/soda'> Soda </Link></p>
-        <p><Link exact to='/chocolate'> Chocolate </Link></p>
-        <p><Link exact to='/gim'> Gim </Link></p>
+        <p><Link to='/soda'> Soda </Link></p>
+        <p><Link to='/chocolate'> Chocolate </Link></p>
+        <p><Link to='/gim'> Gim </Link></p>
       </div>
     );
   }

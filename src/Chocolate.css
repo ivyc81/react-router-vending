@@ -1,3 +1,9 @@
 .Chocolate img {
-  
-}
+    height: 250px;
+    animation: disappear 2s infinite;
+  }
+
+  @keyframes disappear {
+    0%   { opacity: 1 }
+    100% { opacity: 0 }
+  }

@@ -9,7 +9,7 @@ class Chocolate extends Component {
       <div className="Chocolate">
         <p>I am Chocolate!!! I am everyone's favorite.</p>
         <img src={ chocoPng } alt="dark chocolate" />
-        <Link to='/'>Home </Link>
+        <p><Link to='/'>Home </Link></p>
       </div>
     );
   }

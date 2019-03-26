@@ -1,0 +1,11 @@
+.Soda img {
+    position: absolute;
+    height: 50px;
+
+    /* animation: random-disappear 2s infinite; */
+}
+
+/* @keyframes random-disappear {
+    0%   { opacity: 1 }
+    100% { opacity: 0 }
+  } */
