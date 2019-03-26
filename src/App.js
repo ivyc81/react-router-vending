@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import VendingMachine from './VendingMachine';
 import Soda from './Soda';
 import Chocolate from './Chocolate';
@@ -12,7 +12,7 @@ class App extends Component {
     return (
       <div className="App">
         <BrowserRouter>
-          {/* <Navbar /> */}
+          <Navbar />
           <Switch>
             <Route exact path='/' render={() => <VendingMachine />} />
             <Route exact path='/soda' render={() => <Soda />} />

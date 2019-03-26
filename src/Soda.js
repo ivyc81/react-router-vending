@@ -7,6 +7,7 @@ class Soda extends Component {
     return (
       <div className="Soda">
         Bubblezzz
+        
         <Link to='/'>Home </Link>
       </div>
     );
